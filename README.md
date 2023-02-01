@@ -2,9 +2,11 @@
 
 # Functions
 
-D R Y
-
-Don't  repeat yourself
+D R Y  (Don't  repeat yourself)
+- Principle to avoid repetition 
+- It is easy to create errors that are hard to spot when writing long blocks of code.
+- Have to make changes in numerous places so it is time consuming.
+- Instead, you can create functions that perform those tasks, using sets of arguments or inputs to specify how the task is performed.
 
 ## Create a function
 ```` python
@@ -13,15 +15,16 @@ Don't  repeat yourself
      print("Something has been printed")
 
  print_something()
+ 0utput = "Something has been printed"
 ````
 
 
 ## Functions and arguments
+- Information can be passed into functions as arguments.
 
+- Arguments are specified after the function name, inside the parentheses. You can add as many arguments as you want, just separate them with a comma.
 
-public void print_string(String_text)
-
- naming your arguments properly is critical
+- Naming your arguments properly is critical
 
 ```` python 
 def greetings(name):
@@ -30,17 +33,20 @@ def greetings(name):
  greetings("Ilyas")
  greetings("Belal")
  
+
+ 
 ````
 
-
 ## The Return statement
-
+- The Python return statement is a key component of functions and methods. 
+- You can use the return statement to make your functions send Python objects back to the caller code. These objects are known as the function’s return value. 
+  - You can use them to perform further computation in your programs.
 ````python
 def addition(int1, int2):
      return int1 + int2
 
  print(addition(2,2))
-
+#Output = 4
 
  Default arguments
  def addition(int1=2, int2=2):
